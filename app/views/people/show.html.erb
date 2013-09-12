@@ -1,0 +1,19 @@
+<h1><%= @person.name %></h1>
+
+<div>
+  Phone: <%= @person.phone %>
+</div>
+<% if @address %>
+  <div>
+    Address: <%= @address.street_address %>
+  </div>
+  <div>
+    City: <%= @address.city %>
+  </div>
+  <div>
+    State: <%= @address.state %>
+  </div>
+  <div>
+    Zip: <%= @address.zip %>
+  </div>
+<% end %>
